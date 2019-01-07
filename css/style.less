@@ -67,6 +67,7 @@ header {
     a {
       font-size: 2.5rem;
       text-decoration: none;
+      text-transform: capitalize;
       color: white;
       border: 2px solid transparent;
       transition: 0.3s border-bottom, 0.3s color;
@@ -90,5 +91,59 @@ header {
     margin: 8px 0;
     font-size: 2.2rem;
     color: bisque;
+    text-shadow: 1px 1px blue;
+  }
+}
+
+.demands {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 15px;
+  background: aliceblue;
+
+  .title {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .demands-and-benefits {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 50px;
+
+    ul {
+      width: 50%;
+      padding: 10px 30px;
+
+      &:first-child {
+        border-right: 1px solid black;
+      }
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+
+        span {
+          font-size: 1.7rem;
+          text-transform: capitalize;
+
+          &:first-child {
+            margin-right: 15px;
+            color: darkcyan;
+            text-shadow: 1px 1px black;
+          }
+
+          &:last-child {
+            color: darkblue;
+            border-bottom: 3px dotted black;
+          }
+        }
+      }
+    }
   }
 }
