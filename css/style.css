@@ -27,7 +27,7 @@ header {
   max-width: 1200px;
   margin-top: 15px;
 }
-.menu .logo {
+.menu > .logo {
   font-size: 4rem;
   text-decoration: none;
   text-transform: capitalize;
@@ -35,23 +35,23 @@ header {
   color: darkblue;
   transition: 0.3s color;
 }
-.menu .logo:hover {
+.menu > .logo:hover {
   color: orange;
 }
 .navigation {
   display: flex;
   justify-content: space-around;
 }
-.navigation li {
+.navigation > li {
   margin: 0 10px;
   padding: 0 10px;
   cursor: pointer;
 }
-.navigation li:hover a {
+.navigation > li:hover a {
   color: aqua;
   border-bottom: 2px solid orange;
 }
-.navigation li a {
+.navigation > li > a {
   font-size: 2.5rem;
   text-decoration: none;
   text-transform: capitalize;
@@ -65,12 +65,12 @@ header {
   text-align: center;
   cursor: default;
 }
-.info .title {
+.info > .title {
   margin-bottom: 40px;
   font-size: 2.8rem;
   text-transform: uppercase;
 }
-.info .description {
+.info > .description {
   margin: 8px 0;
   font-size: 2.2rem;
   color: bisque;
@@ -80,44 +80,110 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 20px 15px;
+  padding: 75px 15px;
   background: aliceblue;
 }
-.demands .title {
+.demands > .title {
   font-size: 3rem;
   text-align: center;
   text-transform: capitalize;
 }
-.demands .demands-and-benefits {
+.demands > .demands-and-benefits {
   display: flex;
   justify-content: center;
   width: 100%;
   max-width: 1200px;
   margin-top: 50px;
 }
-.demands .demands-and-benefits ul {
+.demands > .demands-and-benefits > ul {
   width: 50%;
   padding: 10px 30px;
 }
-.demands .demands-and-benefits ul:first-child {
+.demands > .demands-and-benefits > ul:first-child {
   border-right: 1px solid black;
 }
-.demands .demands-and-benefits ul li {
+.demands > .demands-and-benefits > ul > li {
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
 }
-.demands .demands-and-benefits ul li span {
+.demands > .demands-and-benefits > ul > li > span {
   font-size: 1.7rem;
   text-transform: capitalize;
 }
-.demands .demands-and-benefits ul li span:first-child {
+.demands > .demands-and-benefits > ul > li > span:first-child {
   margin-right: 15px;
   color: darkcyan;
   text-shadow: 1px 1px black;
 }
-.demands .demands-and-benefits ul li span:last-child {
+.demands > .demands-and-benefits > ul > li > span:last-child {
   color: darkblue;
   border-bottom: 3px dotted black;
+}
+.screenshots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0;
+  background: aliceblue;
+  border-top: 1px solid black;
+}
+.screenshots > .title {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  margin: 0 0 50px;
+  text-transform: capitalize;
+}
+.screenshots > .container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+.screenshots > .container > .screenshot {
+  max-height: 200px;
+  width: calc(100% / 3);
+  border: 5px solid white;
+  object-fit: contain;
+  transition: 0.5s border, 0.5s transform;
+}
+.screenshots > .container > .screenshot:hover {
+  border-color: brown;
+  transform: scale(1.25);
+}
+footer {
+  display: flex;
+  width: 100%;
+  padding: 25px 15px;
+  background: url("/img/bg.jpg") no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+footer > .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  font-size: 3.2rem;
+  color: orange;
+}
+footer > .contacts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  color: aliceblue;
+}
+footer > .contacts > span {
+  width: 50%;
+  margin: 15px 0;
+}
+footer > .contacts > span > a {
+  color: #cafff7;
+  text-decoration: none;
+  transition: 0.3s color;
+  font-size: 2rem;
+}
+footer > .contacts > span > a:hover {
+  color: orange;
 }
 /*# sourceMappingURL=style.css.map */
